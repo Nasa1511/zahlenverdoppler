@@ -1,1 +1,55 @@
-# zahlenverdoppler
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Zahlenverdoppler</title>
+ 
+
+</head>
+
+<body style="background-color: rgb(203, 214, 235);"></body>
+
+<h1 style="color: rgb(103, 123, 190);" ><b><i>Zahlenverdoppler</i></b></h1>
+
+<br>
+
+<input type="number" id="zahl" name="quantity" min="1" max="5" >
+<br>
+
+
+
+<p><button onclick="verdoppeln()">Verdoppeln</button ></p>
+    <p><button onclick="Quadieren()">Quadieren</button ></p>
+
+<br>
+
+<p id="ergebnis"></p>
+<p id="ergebnis"></p>
+
+<script>
+
+function verdoppeln() {
+    let zahl = document.getElementById("zahl").value;
+
+    let ergebnis = zahl * 2;
+
+    document.getElementById("ergebnis").textContent = ergebnis;
+}
+
+function Quadieren() {
+    let zahl = document.getElementById("zahl").value;
+
+    let ergebnis = zahl * zahl;
+
+    document.getElementById("ergebnis").textContent = ergebnis;
+}
+</script>
+
+
+
+ </body>
+
+
+
+
+</html>
